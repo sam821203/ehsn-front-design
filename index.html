@@ -11,9 +11,6 @@
     body,
     div,
     span,
-    applet,
-    object,
-    iframe,
     h1,
     h2,
     h3,
@@ -21,72 +18,18 @@
     h5,
     h6,
     p,
-    blockquote,
-    pre,
     a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
     img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
     ul,
     li,
-    fieldset,
     form,
     label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
     article,
     aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
     footer,
     header,
-    hgroup,
-    menu,
     nav,
-    output,
-    ruby,
     section,
-    summary,
-    time,
-    mark,
-    audio,
     video {
       padding: 0;
       margin: 0;
@@ -144,7 +87,7 @@
     p {
       font-size: 14px;
       color: var(--secondary-300);
-      line-height: 150%;
+      line-height: 135%;
     }
 
     img {
@@ -164,16 +107,36 @@
       color: #fff;
     }
 
-    .wrapper {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 12px;
-      grid-row-gap: 12px;
+    video,
+    img {
+      width: 100%;
+      border-radius: 4px;
+      /* filter: brightness(35%); */
+      transition: all .3s ease;
     }
 
-    .wrapper>div {
-      height: 340px;
+    .wrapper {
+      margin-top: 100px;
+      margin-left: 256px;
+      margin-right: 256px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
     }
+
+    .wrapper .item {
+      position: relative;
+    }
+
+    /* .overlay {
+      position: absolute;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+    } */
   </style>
 </head>
 
@@ -181,62 +144,115 @@
   <header>Home</header>
   <main>
     <div class="wrapper">
-      <div>
-        <a href="./3c-618/index.html">3c-618</a>
+      <div class="item">
+        <a href="./3c-618/index.html">
+          <img src="./posters/poster-3c-618.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./graduation/index.html">graduation</a>
+      <div class="item">
+        <!-- <div class="overlay"></div> -->
+        <a href="./graduation/index.html">
+          <video id="video1" autoplay loop muted playsinline preload="metadata"
+            poster="./posters/poster-graduation.jpg">
+            <source src="./videos/graduation.mp4" type="video/mp4">
+            <source src="./videos/graduration.webm" type="video/ogg">
+            Your browser does not support HTML video.
+          </video>
+        </a>
       </div>
-      <div>
-        <a href="./celebrities/index.html">celebrities</a>
+      <div class="item">
+        <a href="./celebrities/index.html">
+          <img src="./posters/poster-celebrities.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./mother-1st/index.html">mother-1st</a>
+      <div class="item">
+        <a href="./mother-1st/index.html">
+          <img src="./posters/poster-mother-1st.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./mother-2nd/index.html">mother-2nd</a>
+      <div class="item">
+        <a href="./mother-2nd/index.html">
+          <img src="./posters/poster-mother-2nd.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./lottery/index.html">lottery</a>
+      <div class="item">
+        <a href="./lottery/index.html">
+          <img src="./posters/poster-lottery.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./goddess-1st/index.html">goddess-1st</a>
+      <div class="item">
+        <a href="./goddess-1st/index.html">
+          <img src="./posters/poster-goddess-1st.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./goddess-2nd/index.html">goddess-2nd</a>
+      <div class="item">
+        <a href="./goddess-2nd/index.html">
+          <img src="./posters/poster-goddess-2nd.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./new-year-1st/index.html">new-year-1st</a>
+      <div class="item">
+        <a href="./new-year-1st/index.html">
+          <img src="./posters/poster-new-year-1st.jpg" alt="">
+        </a>
       </div>
       <div>
         <a href="./new-year-2nd/index.html">new-year-2nd</a>
       </div>
-      <div>
-        <a href="./1212-1st/index.html">1212-1st</a>
+      <div class="item">
+        <a href="./1212-1st/index.html">
+          <img src="./posters/poster-1212-1st.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./1212-2nd/index.html">1212-2nd</a>
+      <div class="item">
+        <a href="./1212-2nd/index.html">
+          <img src="./posters/poster-1212-2nd.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./back-to-school/index.html">back-to-school</a>
+      <div class="item">
+        <a href="./back-to-school/index.html">
+          <img src="./posters/poster-back-to-school.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./father/index.html">father</a>
+      <div class="item">
+        <a href="./father/index.html">
+          <img src="./posters/poster-father.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./summer-1st/index.html">summer-1st</a>
+      <div class="item">
+        <a href="./summer-1st/index.html">
+          <img src="./posters/poster-summer-1st.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./summer-2nd/index.html">summer-2nd</a>
+      <div class="item">
+        <a href="./summer-2nd/index.html">
+          <img src="./posters/poster-summer-2nd.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./618-lottery/index.html">618-lottery</a>
+      <div class="item">
+        <a href="./618-lottery/index.html">
+          <img src="./posters/poster-618-lottery.jpg" alt="">
+        </a>
       </div>
-      <div>
-        <a href="./3c-thor/e/index.html">3c-thor</a>
+      <div class="item">
+        <a href="./3c-thor/e/index.html">
+          <img src="./posters/poster-3c-thor.jpg" alt="">
+        </a>
       </div>
     </div>
   </main>
+  <script>
+    var myVideo = document.getElementById("video1");
+
+    myVideo.addEventListener("mouseover", function (e) {
+      myVideo.play();
+      // myVideo.style.filter = 'brightness(100%)'
+    })
+
+    myVideo.addEventListener("mouseout", function (e) {
+      myVideo.pause();
+      // myVideo.style.filter = 'brightness(35%)'
+    })
+  </script>
 </body>
 
 </html>
