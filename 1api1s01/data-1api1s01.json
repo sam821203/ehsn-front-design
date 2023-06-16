@@ -1,0 +1,38 @@
+{
+  "CateId": 16462,
+  "CateName": "日用清潔",
+  "Link": null,
+  "Banners": [
+    {
+      "Title": "💎婚囍特輯 滿額吃王品",
+      "ImageURL": "https://media.etmall.com.tw/Promo/Image/Kanban/62/355623/e698a03e-93b7-4e23-96a1-804fe5f4fe51.jpg",
+      "URL": "https://www.etmall.com.tw/Activity/Reg/2858"
+    },
+    {
+      "Title": "🎊年中珠寶618元up",
+      "ImageURL": "https://media.etmall.com.tw/Promo/Image/Kanban/62/360505/406187b1-307f-420f-a078-3340cc03640b.jpg",
+      "URL": "https://www.etmall.com.tw/gp/180984"
+    },
+    {
+      "Title": "📺TV熱銷▼下單享優惠",
+      "ImageURL": "https://media.etmall.com.tw/Promo/Image/Kanban/62/314649/cb943382-170d-46c3-b020-fd8e4a6c9ea5.jpg",
+      "URL": "https://www.etmall.com.tw/gp/195791"
+    },
+    {
+      "Title": "📢本週珠寶NEW專區",
+      "ImageURL": "https://media.etmall.com.tw/Promo/Image/Kanban/62/321399/1ceea19e-719f-42ca-a34c-25fa92feb64f.jpg",
+      "URL": "https://www.etmall.com.tw/gp/168578"
+    },
+    {
+      "Title": "📣珠寶熱銷TOP.100",
+      "ImageURL": "https://media.etmall.com.tw/Promo/Image/Kanban/62/277229/104f0485-e948-4db1-8ba8-fba5c703ed35.jpg",
+      "URL": "https://www.etmall.com.tw/gp/177815"
+    },
+    {
+      "Title": "💎30分輕奢美鑽6折up",
+      "ImageURL": "https://media.etmall.com.tw/Promo/Image/Kanban/62/132275/22f97579-7b7e-404f-9791-c50b79eaadf1.jpg",
+      "URL": "https://www.etmall.com.tw/gp/106888"
+    }
+  ],
+  "CategoryBar": null
+}
