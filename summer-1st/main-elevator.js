@@ -27,7 +27,7 @@ $(function () {
   // 左側電梯-活動-大網
   var navContent = [
     {
-      linkUrl: "https://media.etmall.com.tw/sp/14513/m/index.html",
+      linkUrl: "https://media.etmall.com.tw/sp/15520/m/index.html",
       words: "主會場",
       target: "",
     },
@@ -337,9 +337,9 @@ $(function () {
       words: "分會場",
     },
     {
-      linkUrl: "https://media.etmall.com.tw/sp/14513/m/index.html",
+      linkUrl: "https://media.etmall.com.tw/sp/15520/m/index.html",
       APPlinkUrl:
-        "etmall://open?pgid=44&tb=0&url=https%3a%2f%2fmedia.etmall.com.tw%2fsp%2f14513%2fm%2fapp.html&t=%e7%95%a2%e6%a5%ad%e5%bf%ab%e6%a8%82%7cETMall%e6%9d%b1%e6%a3%ae%e8%b3%bc%e7%89%a9",
+        "etmall://open?pgid=44&tb=0&url=https%3a%2f%2fmedia.etmall.com.tw%2fsp%2f15520%2fm%2fapp.html&t=%e5%a4%8f%e5%ad%a3%e8%b3%bc%e7%89%a9%e7%af%80%7cETMall%e6%9d%b1%e6%a3%ae%e8%b3%bc%e7%89%a9",
       imageUrl: "icon-2.png",
       words: "主會場",
     },
