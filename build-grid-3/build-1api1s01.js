@@ -89,4 +89,4 @@ function buildSwiperAPIBanner() {
 }
 
 // 建置 section
-buildSwiperAPIBanner();
+// buildSwiperAPIBanner();
