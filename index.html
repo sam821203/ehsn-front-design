@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ehsn front design</title>
+    <link
+      rel="stylesheet"
+      href="https://media.etmall.com.tw/sp/12500/generate_v1.5.5.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       html,
       body,
@@ -21,10 +31,6 @@
       img,
       ul,
       li,
-      form,
-      label,
-      article,
-      aside,
       footer,
       header,
       nav,
@@ -54,10 +60,10 @@
 
       body {
         line-height: 1;
-        font-family: "Open Sans", sans-serif;
         letter-spacing: 0.4px;
         color: #fff;
-        background-color: #000;
+        background-color: #121212;
+        font-family: "Open Sans", sans-serif;
       }
 
       nav {
@@ -74,24 +80,6 @@
         list-style: none;
       }
 
-      blockquote,
-      q {
-        quotes: none;
-      }
-
-      blockquote::before,
-      blockquote::after,
-      q::before,
-      q::after {
-        content: "";
-        content: none;
-      }
-
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-
       p {
         font-size: 16px;
         color: white;
@@ -100,9 +88,17 @@
 
       h2 {
         font-size: 26px;
-        padding-bottom: 20px;
+        padding-bottom: 16px;
         margin-bottom: 40px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        text-shadow: 1px 1px 2px #000;
+      }
+
+      video,
+      img {
+        width: 100%;
+        border-radius: 4px;
+        transition: all 0.3s ease;
       }
 
       img {
@@ -112,14 +108,27 @@
         vertical-align: middle;
       }
 
-      input:focus,
-      textarea:focus {
-        outline: none !important;
-      }
-
       a {
         text-decoration: none;
         color: #fff;
+      }
+
+      section {
+        margin: 0 auto 150px;
+        padding-left: 16px;
+        padding-right: 16px;
+        min-width: 1080px;
+        max-width: 1608px;
+      }
+
+      .go-top {
+        right: 40px;
+        bottom: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+
+      .go-top.is-visible:hover {
+        border-color: rgba(255, 255, 255, 1);
       }
 
       .nav__wrap {
@@ -133,6 +142,8 @@
         width: 140px;
         height: auto;
         transform: translateY(-30px);
+        transform-origin: 20% 0%;
+        animation: logo-ani 12s 1.6s infinite;
       }
 
       .works__wrap {
@@ -143,16 +154,16 @@
         margin-top: calc(72px / 2 - 20px / 2);
       }
 
+      .works__wrap a {
+        transition: 0.4s;
+      }
+
       .works__wrap > li {
         font-size: 20px;
         font-weight: 500;
         margin-left: 48px;
         transition: 0.4s;
         padding-top: 0;
-      }
-
-      .works__wrap a {
-        transition: 0.4s;
       }
 
       .works__wrap > li:hover {
@@ -170,84 +181,25 @@
         font-size: 28px;
         line-height: 170%;
         font-weight: 300;
+        text-shadow: 1px 1px 2px #000;
       }
 
       .description span {
         text-decoration: underline;
-        text-underline-offset: 11px;
+        text-underline-offset: 10px;
         text-decoration-thickness: 2px;
         font-weight: 700;
-        /* box-shadow: inset 0 -36px #0065BF;
-      padding-bottom: 12px; */
       }
 
       .emoji {
         margin-bottom: 60px;
       }
 
-      section {
-        margin-left: 112px;
-        margin-right: 112px;
-        margin-bottom: 104px;
-        min-width: 1080px;
-      }
-
-      video,
-      img {
-        width: 100%;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-      }
-
-      .promo__wrap,
-      .build-grid__wrap,
-      .gift-package__wrap {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 16px;
-        grid-row-gap: 16px;
-      }
-
-      .promo__wrap video,
-      .promo__wrap img {
-        filter: brightness(35%);
-      }
-
-      .promo__wrap video:hover,
-      .promo__wrap img:hover {
-        filter: brightness(100%);
-      }
-
-      .promo__wrap .item {
-        position: relative;
-      }
-
-      .hover__description {
-        font-size: 24px;
-        text-align: center;
-        margin-bottom: 120px;
-        font-weight: 300;
-        letter-spacing: 0.2px;
-      }
-
-      .hover__description span {
-        color: #fc9486;
-        font-weight: 500;
-      }
-
-      .section__description {
-        font-size: 20px;
-        line-height: 160%;
-        padding: 0 8px 48px;
-        max-width: 1200px;
-        opacity: 0.75;
-      }
-
       .emoji__container {
         font-weight: 600;
         overflow: hidden;
-        height: 34px;
-        padding: 5px 220px;
+        height: 42px;
+        padding: 0px 220px;
         font-size: 36px;
       }
 
@@ -263,6 +215,51 @@
 
       .emoji__item {
         line-height: 42px;
+      }
+
+      .hover__description {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 120px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+      }
+
+      .hover__description span {
+        color: #fc9486;
+        font-weight: 500;
+      }
+
+      .sp-page__wrap,
+      .build-grid__wrap,
+      .promo-page__wrap,
+      .emarsys-edm__wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+      }
+
+      .sp-page__wrap video,
+      .sp-page__wrap img {
+        filter: brightness(35%);
+      }
+
+      .sp-page__wrap video:hover,
+      .sp-page__wrap img:hover {
+        filter: brightness(100%);
+      }
+
+      .sp-page__wrap .item {
+        position: relative;
+      }
+
+      .section__description {
+        font-size: 20px;
+        line-height: 160%;
+        padding: 0 8px 48px;
+        max-width: 1200px;
+        opacity: 0.75;
       }
 
       @keyframes emoji-change {
@@ -298,35 +295,67 @@
         }
       }
 
-      /* .overlay {
-      position: absolute;
-      top: 0;
-      background-color: rgba(0, 0, 0, 0.2);
-      width: 100%;
-      height: 100%;
-      border-radius: 4px;
-    } */
+      @keyframes logo-ani {
+        0% {
+          animation-timing-function: ease-in-out;
+          transform: rotate(0deg) translateY(-30px);
+        }
+        5%,
+        15% {
+          transform: rotate(30deg) translateY(-30px);
+          animation-timing-function: ease-in-out;
+        }
+        10%,
+        20% {
+          opacity: 1;
+          transform: rotate(15deg) translateY(-30px);
+          animation-timing-function: ease-in-out;
+        }
+        25% {
+          opacity: 0;
+          transform: translate3d(0, 700px, 0);
+        }
+        30%,
+        46% {
+          opacity: 0;
+          transform: scale(0%) translateY(-30px);
+        }
+        52% {
+          opacity: 1;
+          transform: scale(30%) translateY(-30px);
+        }
+        55% {
+          opacity: 1;
+          transform: scale(1.061) translateY(-30px);
+          animation-timing-function: ease-out;
+        }
+        56%,
+        100% {
+          opacity: 1;
+          transform: scale(1) translateY(-30px);
+        }
+      }
     </style>
   </head>
 
   <body>
-    <nav>
+    <nav id="navMenu">
       <div class="nav__wrap">
         <div class="logo__wrap">
           <img src="logo-small.svg" alt="" />
         </div>
         <ul class="works__wrap">
           <li>
-            <a href="">Promo</a>
+            <a href="#spPage">SP page</a>
           </li>
           <li>
-            <a href="">Gift package</a>
+            <a href="#promoPage">Promo page</a>
           </li>
           <li>
-            <a href="">Build grid</a>
+            <a href="#buildGrid">Build grid</a>
           </li>
           <li>
-            <a href="">EDM</a>
+            <a href="#emarsysEdm">Emarsys EDM</a>
           </li>
         </ul>
       </div>
@@ -349,14 +378,9 @@
       <div class="hover__description">
         <span>Hover image</span> for a more immersive experience ✨
       </div>
-      <section class="promo">
-        <h2>Promo events</h2>
-        <div class="promo__wrap">
-          <!-- <div class="item">
-          <a href="./3c-618/index.html">
-            <img src="./posters/poster-3c-618.jpg" alt="">
-          </a>
-        </div> -->
+      <section class="sp-page">
+        <h2 id="spPage">SP page</h2>
+        <div class="sp-page__wrap">
           <div class="item">
             <!-- <div class="overlay"></div> -->
             <a href="./graduation/index.html">
@@ -400,16 +424,6 @@
               </video>
             </a>
           </div>
-          <!-- <div class="item">
-          <a href="./lottery/index.html">
-            <img src="./posters/poster-lottery.jpg" alt="">
-          </a>
-        </div> -->
-          <!-- <div class="item">
-            <a href="./goddess-1st/index.html">
-              <img src="./posters/poster-goddess-1st.jpg" alt="" />
-            </a>
-          </div> -->
           <div class="item">
             <a href="./goddess-2nd/index.html">
               <video
@@ -426,11 +440,6 @@
               </video>
             </a>
           </div>
-          <!-- <div class="item">
-          <a href="./new-year-1st/index.html">
-            <img src="./posters/poster-new-year-1st.jpg" alt="">
-          </a>
-        </div> -->
           <div class="item">
             <a href="./new-year-2nd/index.html">
               <video
@@ -528,33 +537,38 @@
             </a>
           </div>
           <!-- <div class="item">
-          <a href="./summer-2nd/index.html">
-            <img src="./posters/poster-summer-2nd.jpg" alt="">
-          </a>
-        </div> -->
+            <a href="./618-lottery/index.html">
+              <img src="./posters/poster-618-lottery.jpg" alt="">
+            </a>
+          </div> -->
           <!-- <div class="item">
-          <a href="./618-lottery/index.html">
-            <img src="./posters/poster-618-lottery.jpg" alt="">
-          </a>
-        </div> -->
-          <!-- <div class="item">
-          <a href="./3c-thor/e/index.html">
-            <img src="./posters/poster-3c-thor.jpg" alt="">
-          </a>
-        </div> -->
+            <a href="./3c-thor/e/index.html">
+              <img src="./posters/poster-3c-thor.jpg" alt="">
+            </a>
+          </div> -->
         </div>
       </section>
-      <section class="gift-package">
-        <h2>Gift Package</h2>
-        <div class="gift-package__wrap">
+      <section class="promo-page" id="promoPage">
+        <h2>Promo page</h2>
+        <div class="promo-page__wrap">
           <div class="item">
-            <a href="./gift-package/index.html">
-              <img src="./posters/poster-gift-package.jpg" alt="" />
+            <a href="./promo-page/gift-package/index.html">
+              <img src="./posters/poster-promo-page-1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="./promo-page/lottery/index.html">
+              <img src="./posters/poster-promo-page-2.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="./promo-page/3c-618/index.html">
+              <img src="./posters/poster-3c-618.jpg" alt="" />
             </a>
           </div>
         </div>
       </section>
-      <section class="build-grid">
+      <section id="buildGrid" class="build-grid">
         <h2>Build grid</h2>
         <!-- <p class="section__description">
           想切成9宮格就全選打勾 如果想切成長條狀 就打3個勾
@@ -579,39 +593,151 @@
           </div>
         </div>
       </section>
+      <section id="emarsysEdm" class="emarsys-edm">
+        <h2>Emarsys EDM</h2>
+        <div class="emarsys-edm__wrap">
+          <div class="item">
+            <a href="./promo-page/index.html">
+              <img src="./posters/poster-edm-1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="./promo-page/index.html">
+              <img src="./posters/poster-edm-2.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="./promo-page/index.html">
+              <img src="./posters/poster-edm-3.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
     <script>
-      const graduation = document.getElementById("graduation");
-      const mother2 = document.getElementById("mother2");
-      const goddess2 = document.getElementById("goddess2");
-      const newYear2 = document.getElementById("newYear2");
-      const double121st = document.getElementById("double121st");
-      const double122nd = document.getElementById("double122nd");
-      const backToSchool = document.getElementById("backToSchool");
-      const father = document.getElementById("father");
-      const summer1 = document.getElementById("summer1");
+      const addActiveVideo = () => {
+        const graduation = document.getElementById("graduation");
+        const mother2 = document.getElementById("mother2");
+        const goddess2 = document.getElementById("goddess2");
+        const newYear2 = document.getElementById("newYear2");
+        const double121st = document.getElementById("double121st");
+        const double122nd = document.getElementById("double122nd");
+        const backToSchool = document.getElementById("backToSchool");
+        const father = document.getElementById("father");
+        const summer1 = document.getElementById("summer1");
 
-      const activeVideo = (el) => {
-        el.addEventListener("mouseover", function () {
-          el.play();
-          el.style.filter = "brightness(100%)";
-        });
+        const activeVideo = (el) => {
+          el.addEventListener("mouseover", function () {
+            el.play();
+            el.style.filter = "brightness(100%)";
+          });
 
-        el.addEventListener("mouseout", function () {
-          el.pause();
-          el.style.filter = "brightness(35%)";
-        });
+          el.addEventListener("mouseout", function () {
+            el.pause();
+            el.style.filter = "brightness(35%)";
+          });
+        };
+
+        activeVideo(graduation);
+        activeVideo(mother2);
+        activeVideo(goddess2);
+        activeVideo(newYear2);
+        activeVideo(double121st);
+        activeVideo(double122nd);
+        activeVideo(backToSchool);
+        activeVideo(father);
+        activeVideo(summer1);
       };
 
-      activeVideo(graduation);
-      activeVideo(mother2);
-      activeVideo(goddess2);
-      activeVideo(newYear2);
-      activeVideo(double121st);
-      activeVideo(double122nd);
-      activeVideo(backToSchool);
-      activeVideo(father);
-      activeVideo(summer1);
+      const addGoTopBtn = () => {
+        const makeGoTopBtn = () => {
+          const svgNameSpace = "http://www.w3.org/2000/svg";
+          const goTopElement = document.createElement("button");
+          const svgElement = document.createElementNS(svgNameSpace, "svg");
+          const pathElement = document.createElementNS(svgNameSpace, "path");
+
+          svgElement.setAttribute("width", "24");
+          svgElement.setAttribute("height", "24");
+          svgElement.setAttribute("viewBox", "0 0 24 24");
+          pathElement.setAttribute("fill", "#fff");
+          pathElement.setAttribute(
+            "d",
+            "M12 4h.018c.31.004.618.102.875.296l.117.099 6.752 6.307a.75.75 0 0 1-.937 1.166l-.087-.07-5.988-5.594V19.25a.75.75 0 0 1-1.493.102l-.007-.102V6.204l-5.988 5.594a.75.75 0 0 1-.978.04l-.082-.076a.75.75 0 0 1-.04-.978l.076-.082 6.752-6.307c.277-.26.635-.391.993-.395H12z"
+          );
+
+          goTopElement.id = "goTop";
+          goTopElement.classList.add("go-top");
+
+          svgElement.appendChild(pathElement);
+          goTopElement.appendChild(svgElement);
+
+          return goTopElement;
+        };
+
+        const goTopBtn = makeGoTopBtn();
+
+        document.body.appendChild(goTopBtn);
+      };
+
+      const addScrollTop = () => {
+        const goTopBtn = document.getElementById("goTop");
+
+        // Reveal the button
+        const btnReveal = () => {
+          if (window.scrollY >= 300) {
+            goTopBtn.classList.add("is-visible");
+          } else {
+            goTopBtn.classList.remove("is-visible");
+          }
+        };
+
+        // Smooth scroll top
+        const smoothScrollTop = () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        };
+
+        goTopBtn.addEventListener("click", smoothScrollTop);
+        window.addEventListener("scroll", btnReveal);
+      };
+
+      const addCheckAnchors = () => {
+        const checkAnchors = () => {
+          const anchors = Array.from(document.querySelectorAll('a[href^="#"]'));
+
+          anchors.forEach((anchor) => {
+            anchor.addEventListener("click", (e) => {
+              const href = anchor.getAttribute("href");
+              const target = document.querySelector(href);
+
+              if (target) {
+                e.preventDefault();
+
+                // 修正位移值
+                const navMenuHeight =
+                  document.querySelector("#navMenu").offsetHeight + 4;
+                window.scrollTo({
+                  top: target.offsetTop + navMenuHeight,
+                  behavior: "smooth",
+                });
+              }
+            });
+          });
+        };
+
+        const updateCheckAnchors = () => {
+          document.addEventListener("DOMContentLoaded", checkAnchors);
+        };
+
+        updateCheckAnchors();
+      };
+
+      addActiveVideo();
+      addGoTopBtn();
+      addScrollTop();
+      addCheckAnchors();
     </script>
   </body>
 </html>
