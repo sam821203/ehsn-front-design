@@ -238,16 +238,17 @@
 
       .sp-page__wrap video,
       .sp-page__wrap img {
-        /* filter: brightness(90%); */
+        filter: brightness(100%);
       }
 
-      .sp-page__wrap video:hover,
-      .sp-page__wrap img:hover {
-        filter: brightness(100%);
+      .sp-page__wrap video:hover + .page__description,
+      .sp-page__wrap img:hover + .page__description {
+        transform: translateY(0px);
+        opacity: 1;
       }
 
       .sp-page__wrap video.active {
-        filter: brightness(100%);
+        filter: brightness(28%);
       }
 
       .sp-page__wrap .item {
@@ -269,14 +270,18 @@
         width: 92%;
         height: 100%;
         pointer-events: none;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all .4s ease;
       }
 
       .page__description > div:first-child {
-        font-size: 28px;
+        margin-bottom: 20px;
+        font-size: 32px;
       }
 
       .page__description .date {
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 400;
       }
 
@@ -292,7 +297,7 @@
       .page__description .date span {
         margin-left: 3px;
         margin-right: 3px;
-        font-size: 12px;
+        font-size: 13px;
       }
 
       .section__description {
@@ -438,9 +443,9 @@
                 Your browser does not support HTML video.
               </video>
               <div class="page__description">
-                <!-- <div>畢業同樂會</div> -->
-                <!-- <div class="decoration"></div>
-                <div class="date">2023<span>/</span>05</div> -->
+                <div>畢業同樂會</div>
+                <!-- <div class="decoration"></div> -->
+                <div class="date">2023<span>/</span>06</div>
               </div>
             </a>
           </div>
@@ -459,6 +464,11 @@
                 <source src="./videos/mother-2nd.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
+              <div class="page__description">
+                <div>我的超人媽咪!</div>
+                <!-- <div class="decoration"></div> -->
+                <div class="date">2023<span>/</span>05</div>
+              </div>
             </a>
           </div>
           <div class="item">
@@ -476,6 +486,11 @@
                 <source src="./videos/goddess-2nd.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
+              <div class="page__description">
+                <div>我就是女神</div>
+                <!-- <div class="decoration"></div> -->
+                <div class="date">2023<span>/</span>03</div>
+              </div>
             </a>
           </div>
           <div class="item">
@@ -493,6 +508,11 @@
                 <source src="./videos/new-year-2nd.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
+              <div class="page__description">
+                <div>春節嗨兔購</div>
+                <!-- <div class="decoration"></div> -->
+                <div class="date">2023<span>/</span>02</div>
+              </div>
             </a>
           </div>
           <div class="item">
@@ -510,6 +530,11 @@
                 <source src="./videos/1212-1st.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
+              <div class="page__description">
+                <div>1212 年終激戰購</div>
+                <!-- <div class="decoration"></div> -->
+                <div class="date">2022<span>/</span>12</div>
+              </div>
             </a>
           </div>
           <div class="item">
@@ -527,6 +552,11 @@
                 <source src="./videos/1212-2nd.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
+              <div class="page__description">
+                <div>平安聖誕YA</div>
+                <!-- <div class="decoration"></div> -->
+                <div class="date">2022<span>/</span>12</div>
+              </div>
             </a>
           </div>
           <div class="item">
@@ -544,6 +574,11 @@
                 <source src="./videos/back-to-school.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
+              <div class="page__description">
+                <div>同學們購起來!</div>
+                <!-- <div class="decoration"></div> -->
+                <div class="date">2022<span>/</span>10</div>
+              </div>
             </a>
           </div>
           <div class="item">
@@ -561,6 +596,11 @@
                 <source src="./videos/father.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
+              <div class="page__description">
+                <div>爸氣付清節</div>
+                <!-- <div class="decoration"></div> -->
+                <div class="date">2022<span>/</span>08</div>
+              </div>
             </a>
           </div>
           <div class="item">
@@ -578,6 +618,11 @@
                 <source src="./videos/summer-1st.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
+              <div class="page__description">
+                <div>夏季購物節</div>
+                <!-- <div class="decoration"></div> -->
+                <div class="date">2022<span>/</span>07</div>
+              </div>
             </a>
           </div>
         </div>
@@ -665,12 +710,12 @@
 
         const activateVideo = (videoElement) => {
           videoElement.addEventListener("mouseover", () => {
-            videoElement.play();
+            videoElement.pause();
             videoElement.classList.add("active");
           });
 
           videoElement.addEventListener("mouseout", () => {
-            videoElement.pause();
+            videoElement.play();
             videoElement.classList.remove("active");
           });
         };
@@ -768,7 +813,7 @@
         updateCheckAnchors();
       };
 
-      // addActivateVideo();
+      addActivateVideo();
       addGoTopBtn();
       addScrollTop();
       addCheckAnchors();
