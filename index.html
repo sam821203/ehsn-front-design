@@ -166,10 +166,6 @@
         padding-top: 0;
       }
 
-      .works__wrap > li:hover {
-        padding-top: 8px;
-      }
-
       .works__wrap > li:hover a {
         color: #fc9486;
       }
@@ -242,7 +238,7 @@
 
       .sp-page__wrap video,
       .sp-page__wrap img {
-        filter: brightness(30%);
+        /* filter: brightness(90%); */
       }
 
       .sp-page__wrap video:hover,
@@ -256,6 +252,47 @@
 
       .sp-page__wrap .item {
         position: relative;
+      }
+
+      .page__description {
+        position: absolute;
+        bottom: 4%;
+        left: 4%;
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        flex-direction: column;
+        padding-top: 8px;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        width: 92%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .page__description > div:first-child {
+        font-size: 28px;
+      }
+
+      .page__description .date {
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .decoration {
+        width: 30px;
+        height: 0.8px;
+        background-color: #fff;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        opacity: 0.75;
+      }
+
+      .page__description .date span {
+        margin-left: 3px;
+        margin-right: 3px;
+        font-size: 12px;
       }
 
       .section__description {
@@ -392,6 +429,7 @@
                 loop
                 muted
                 playsinline
+                autoplay
                 preload="metadata"
                 poster="./posters/poster-graduation.jpg"
               >
@@ -399,6 +437,11 @@
                 <source src="./videos/graduation.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
+              <div class="page__description">
+                <!-- <div>畢業同樂會</div> -->
+                <!-- <div class="decoration"></div>
+                <div class="date">2023<span>/</span>05</div> -->
+              </div>
             </a>
           </div>
           <div class="item">
@@ -408,6 +451,7 @@
                 loop
                 muted
                 playsinline
+                autoplay
                 preload="metadata"
                 poster="./posters/poster-mother-2nd.jpg"
               >
@@ -424,6 +468,7 @@
                 loop
                 muted
                 playsinline
+                autoplay
                 preload="metadata"
                 poster="./posters/poster-goddess-2nd.jpg"
               >
@@ -440,6 +485,7 @@
                 loop
                 muted
                 playsinline
+                autoplay
                 preload="metadata"
                 poster="./posters/poster-new-year-2nd.jpg"
               >
@@ -456,6 +502,7 @@
                 loop
                 muted
                 playsinline
+                autoplay
                 preload="metadata"
                 poster="./posters/poster-1212-1st.jpg"
               >
@@ -472,6 +519,7 @@
                 loop
                 muted
                 playsinline
+                autoplay
                 preload="metadata"
                 poster="./posters/poster-1212-2nd.jpg"
               >
@@ -488,6 +536,7 @@
                 loop
                 muted
                 playsinline
+                autoplay
                 preload="metadata"
                 poster="./posters/poster-back-to-school.jpg"
               >
@@ -504,6 +553,7 @@
                 loop
                 muted
                 playsinline
+                autoplay
                 preload="metadata"
                 poster="./posters/poster-father.jpg"
               >
@@ -520,6 +570,7 @@
                 loop
                 muted
                 playsinline
+                autoplay
                 preload="metadata"
                 poster="./posters/poster-summer-1st.jpg"
               >
@@ -717,7 +768,7 @@
         updateCheckAnchors();
       };
 
-      addActivateVideo();
+      // addActivateVideo();
       addGoTopBtn();
       addScrollTop();
       addCheckAnchors();
