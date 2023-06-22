@@ -175,7 +175,7 @@
         width: 1000px;
         text-align: center;
         font-size: 28px;
-        line-height: 170%;
+        line-height: 200%;
         font-weight: 300;
         text-shadow: 1px 1px 2px #000;
       }
@@ -236,48 +236,56 @@
         grid-row-gap: 16px;
       }
 
-      .sp-page__wrap video,
-      .sp-page__wrap img {
+      .item video,
+      .item img {
         filter: brightness(100%);
       }
 
-      .sp-page__wrap video:hover + .page__description,
-      .sp-page__wrap img:hover + .page__description {
+      .item video:hover + .page__description,
+      .item img:hover + .page__description {
         transform: translateY(0px);
         opacity: 1;
       }
 
-      .sp-page__wrap video.active {
-        filter: brightness(28%);
+      .item video.active,
+      .item img:hover {
+        filter: brightness(25%);
       }
 
-      .sp-page__wrap .item {
+      .item {
         position: relative;
       }
 
       .page__description {
         position: absolute;
-        bottom: 4%;
-        left: 4%;
+        top: 0;
+        left: 0;
         display: flex;
-        justify-content: center;  
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         padding-top: 8px;
         font-weight: 600;
         font-size: 12px;
         letter-spacing: 0.4px;
-        width: 92%;
+        width: 100%;
         height: 100%;
         pointer-events: none;
         opacity: 0;
         transform: translateY(40px);
-        transition: all .4s ease;
+        transition: all 0.4s ease;
       }
 
-      .page__description > div:first-child {
+      .page__description .title {
         margin-bottom: 20px;
         font-size: 32px;
+        letter-spacing: 0.4px;
+        line-height: 100%;
+      }
+
+      .page__description .title span {
+        font-weight: 300;
+        /* font-size: 18px; */
       }
 
       .page__description .date {
@@ -408,7 +416,8 @@
     </nav>
     <main>
       <p class="description">
-        Sam Huang is a web developer focused on <span>building brands</span> and
+        Sam Huang is a web developer specializing in
+        <span>front-end development</span> and
         <span>creating digital experiences</span> — currently working at ETmall
       </p>
       <div class="emoji">
@@ -422,10 +431,10 @@
         </div>
       </div>
       <div class="hover__description">
-        <span>Hover image</span> for a more immersive experience ✨
+        <span>Click image</span> for a more immersive experience ✨
       </div>
       <section class="sp-page">
-        <h2 id="spPage">SP page</h2>
+        <h2 id="spPage">全站活動頁 (SP page)</h2>
         <div class="sp-page__wrap">
           <div class="item">
             <a href="./graduation/index.html">
@@ -443,8 +452,7 @@
                 Your browser does not support HTML video.
               </video>
               <div class="page__description">
-                <div>畢業同樂會</div>
-                <!-- <div class="decoration"></div> -->
+                <div class="title">畢業同樂會</div>
                 <div class="date">2023<span>/</span>06</div>
               </div>
             </a>
@@ -465,8 +473,7 @@
                 Your browser does not support HTML video.
               </video>
               <div class="page__description">
-                <div>我的超人媽咪!</div>
-                <!-- <div class="decoration"></div> -->
+                <div class="title">我的超人媽咪</div>
                 <div class="date">2023<span>/</span>05</div>
               </div>
             </a>
@@ -487,8 +494,7 @@
                 Your browser does not support HTML video.
               </video>
               <div class="page__description">
-                <div>我就是女神</div>
-                <!-- <div class="decoration"></div> -->
+                <div class="title">我就是女王</div>
                 <div class="date">2023<span>/</span>03</div>
               </div>
             </a>
@@ -509,8 +515,7 @@
                 Your browser does not support HTML video.
               </video>
               <div class="page__description">
-                <div>春節嗨兔購</div>
-                <!-- <div class="decoration"></div> -->
+                <div class="title">春節嗨兔購</div>
                 <div class="date">2023<span>/</span>02</div>
               </div>
             </a>
@@ -531,8 +536,7 @@
                 Your browser does not support HTML video.
               </video>
               <div class="page__description">
-                <div>1212 年終激戰購</div>
-                <!-- <div class="decoration"></div> -->
+                <div class="title">1212 年終激戰購</div>
                 <div class="date">2022<span>/</span>12</div>
               </div>
             </a>
@@ -553,8 +557,7 @@
                 Your browser does not support HTML video.
               </video>
               <div class="page__description">
-                <div>平安聖誕YA</div>
-                <!-- <div class="decoration"></div> -->
+                <div class="title">平安聖誕YA</div>
                 <div class="date">2022<span>/</span>12</div>
               </div>
             </a>
@@ -575,8 +578,7 @@
                 Your browser does not support HTML video.
               </video>
               <div class="page__description">
-                <div>同學們購起來!</div>
-                <!-- <div class="decoration"></div> -->
+                <div class="title">同學們購起來!</div>
                 <div class="date">2022<span>/</span>10</div>
               </div>
             </a>
@@ -597,8 +599,7 @@
                 Your browser does not support HTML video.
               </video>
               <div class="page__description">
-                <div>爸氣付清節</div>
-                <!-- <div class="decoration"></div> -->
+                <div class="title">爸氣付清節</div>
                 <div class="date">2022<span>/</span>08</div>
               </div>
             </a>
@@ -619,8 +620,7 @@
                 Your browser does not support HTML video.
               </video>
               <div class="page__description">
-                <div>夏季購物節</div>
-                <!-- <div class="decoration"></div> -->
+                <div class="title">夏季購物節</div>
                 <div class="date">2022<span>/</span>07</div>
               </div>
             </a>
@@ -628,68 +628,94 @@
         </div>
       </section>
       <section class="promo-page" id="promoPage">
-        <h2>Promo page</h2>
+        <h2>機制活動頁 (Promo page)</h2>
         <div class="promo-page__wrap">
           <div class="item">
             <a href="./promo-page/gift-package/index.html">
               <img src="./posters/poster-promo-page-1.jpg" alt="" />
+              <div class="page__description">
+                <div class="title">活動頁 ES6 重構</div>
+                <div class="date">2023<span>/</span>02</div>
+              </div>
             </a>
           </div>
           <div class="item">
             <a href="./promo-page/lottery/index.html">
               <img src="./posters/poster-promo-page-2.jpg" alt="" />
+              <div class="page__description">
+                <div class="title">機制頁切版</div>
+                <div class="date">2023<span>/</span>04</div>
+              </div>
             </a>
           </div>
           <div class="item">
             <a href="./promo-page/3c-1111/index.html">
               <img src="./posters/poster-3c-1111.jpg" alt="" />
+              <div class="page__description">
+                <div class="title">3C 活動頁</div>
+                <div class="date">2022<span>/</span>11</div>
+              </div>
             </a>
           </div>
-          <!-- <div class="item">
-            <a href="./promo-page/3c-618/index.html">
-              <img src="./posters/poster-3c-618.jpg" alt="" />
-            </a>
-          </div> -->
         </div>
       </section>
       <section id="buildGrid" class="build-grid">
-        <h2>Build grid</h2>
-        <!-- <p class="section__description">
-          想切成9宮格就全選打勾 如果想切成長條狀 就打3個勾
-          記得只要是連在一起的都可以 但不相連的還是無法喔 直接儲存就好囉
-          特別的是裡面就已經有相片
-        </p> -->
+        <h2>宮格設計 (Build grid)</h2>
         <div class="build-grid__wrap">
           <div class="item">
             <a href="./build-grid/index.html">
               <img src="./posters/poster-build-grid-1.jpg" alt="" />
+              <div class="page__description">
+                <div class="title">宮格設計與切版</div>
+                <div class="date">2022<span>/</span>10</div>
+              </div>
             </a>
           </div>
           <div class="item">
             <a href="./build-grid-2/index.html">
               <img src="./posters/poster-build-grid-2.jpg" alt="" />
+              <div class="page__description">
+                <div class="title">商品 API 串接</div>
+                <div class="date">2022<span>/</span>11</div>
+              </div>
             </a>
           </div>
           <div class="item">
             <a href="./build-grid-3/index.html">
               <img src="./posters/poster-build-grid-3.jpg" alt="" />
+              <div class="page__description">
+                <div class="title">橫布條 API 串接</div>
+                <div class="date">2022<span>/</span>12</div>
+              </div>
             </a>
           </div>
         </div>
       </section>
       <section id="wixEdm" class="emarsys-edm">
-        <h2>Wix & Edm</h2>
+        <h2>外部需求 (Wix & Edm)</h2>
         <div class="emarsys-edm__wrap">
           <a href="https://www.regalclubspa.com.tw/">
             <div class="item">
               <img src="./posters/poster-regal.jpg" alt="" />
+              <div class="page__description">
+                <div class="title">Regal 官網</div>
+                <div class="date">2023<span>/</span>02</div>
+              </div>
             </div>
           </a>
           <div class="item">
             <img src="./posters/poster-edm-1.jpg" alt="" />
+            <div class="page__description">
+              <div class="title">EDM 生日禮</div>
+              <div class="date">2022<span>/</span>10</div>
+            </div>
           </div>
           <div class="item">
             <img src="./posters/poster-edm-2.jpg" alt="" />
+            <div class="page__description">
+              <div class="title">EDM 會員探索</div>
+              <div class="date">2023<span>/</span>01</div>
+            </div>
           </div>
         </div>
       </section>
