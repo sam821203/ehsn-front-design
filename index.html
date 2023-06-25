@@ -103,6 +103,7 @@
 
       img {
         max-width: 100%;
+        width: auto;
         height: auto;
         border: 0;
         vertical-align: middle;
@@ -236,6 +237,21 @@
         grid-row-gap: 16px;
       }
 
+      .item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        max-height: 275px;
+        height: 17.8vw;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      .item:has(.lazy-img) {
+        background-color: white;
+      }
+
       .item video,
       .item img {
         filter: brightness(100%);
@@ -250,10 +266,6 @@
       .item video.active,
       .item img:hover {
         filter: brightness(25%);
-      }
-
-      .item {
-        position: relative;
       }
 
       .page__description {
@@ -632,7 +644,7 @@
         <div class="promo-page__wrap">
           <div class="item">
             <a href="./promo-page/gift-package/index.html">
-              <img src="./posters/poster-promo-page-1.jpg" alt="" />
+              <img src="./lazyload.png" data-src="./posters/poster-promo-page-1.jpg" alt="" class="lazy-img"/>
               <div class="page__description">
                 <div class="title">活動頁 ES6 重構</div>
                 <div class="date">2023<span>/</span>02</div>
@@ -641,7 +653,7 @@
           </div>
           <div class="item">
             <a href="./promo-page/lottery/index.html">
-              <img src="./posters/poster-promo-page-2.jpg" alt="" />
+              <img src="./lazyload.png" data-src="./posters/poster-promo-page-2.jpg" alt="" class="lazy-img"/>
               <div class="page__description">
                 <div class="title">機制頁切版</div>
                 <div class="date">2023<span>/</span>04</div>
@@ -650,7 +662,7 @@
           </div>
           <div class="item">
             <a href="./promo-page/3c-1111/index.html">
-              <img src="./posters/poster-3c-1111.jpg" alt="" />
+              <img src="./lazyload.png" data-src="./posters/poster-3c-1111.jpg" alt="" class="lazy-img"/>
               <div class="page__description">
                 <div class="title">3C 活動頁</div>
                 <div class="date">2022<span>/</span>11</div>
@@ -664,7 +676,7 @@
         <div class="build-grid__wrap">
           <div class="item">
             <a href="./build-grid/index.html">
-              <img src="./posters/poster-build-grid-1.jpg" alt="" />
+              <img src="./lazyload.png" data-src="./posters/poster-build-grid-1.jpg" alt="" class="lazy-img"/>
               <div class="page__description">
                 <div class="title">宮格設計與切版</div>
                 <div class="date">2022<span>/</span>10</div>
@@ -673,7 +685,7 @@
           </div>
           <div class="item">
             <a href="./build-grid-2/index.html">
-              <img src="./posters/poster-build-grid-2.jpg" alt="" />
+              <img src="./lazyload.png" data-src="./posters/poster-build-grid-2.jpg" alt="" class="lazy-img"/>
               <div class="page__description">
                 <div class="title">商品 API 串接</div>
                 <div class="date">2022<span>/</span>11</div>
@@ -682,7 +694,7 @@
           </div>
           <div class="item">
             <a href="./build-grid-3/index.html">
-              <img src="./posters/poster-build-grid-3.jpg" alt="" />
+              <img src="./lazyload.png" data-src="./posters/poster-build-grid-3.jpg" alt="" class="lazy-img"/>
               <div class="page__description">
                 <div class="title">橫布條 API 串接</div>
                 <div class="date">2022<span>/</span>12</div>
@@ -696,7 +708,7 @@
         <div class="emarsys-edm__wrap">
           <a href="https://www.regalclubspa.com.tw/">
             <div class="item">
-              <img src="./posters/poster-regal.jpg" alt="" />
+              <img src="./lazyload.png" data-src="./posters/poster-regal.jpg" alt="" class="lazy-img"/>
               <div class="page__description">
                 <div class="title">Regal 官網</div>
                 <div class="date">2023<span>/</span>02</div>
@@ -704,14 +716,14 @@
             </div>
           </a>
           <div class="item">
-            <img src="./posters/poster-edm-1.jpg" alt="" />
+            <img src="./lazyload.png" data-src="./posters/poster-edm-1.jpg" alt="" class="lazy-img"/>
             <div class="page__description">
               <div class="title">EDM 生日禮</div>
               <div class="date">2022<span>/</span>10</div>
             </div>
           </div>
           <div class="item">
-            <img src="./posters/poster-edm-2.jpg" alt="" />
+            <img src="./lazyload.png" data-src="./posters/poster-edm-2.jpg" alt="" class="lazy-img"/>
             <div class="page__description">
               <div class="title">EDM 會員探索</div>
               <div class="date">2023<span>/</span>01</div>
@@ -839,10 +851,42 @@
         updateCheckAnchors();
       };
 
+      const addImgLazyLoad = () => {
+        const lazyImgTarget = document.querySelectorAll("img[data-src]");
+
+        const loadImg = ((entries, observer) => {
+
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            
+            const img = entry.target;
+
+            img.src = img.dataset.src;
+
+            img.addEventListener("load", function() {
+              img.classList.remove("lazy-img");
+            })
+
+            observer.unobserve(img);
+          })
+        });
+
+        const imgObserver = new IntersectionObserver(loadImg, {
+          root: null,
+          threshold: 0,
+          rootMargin: '200px'
+        });
+
+        lazyImgTarget.forEach((img) => {
+          imgObserver.observe(img);
+        })
+      }
+      
       addActivateVideo();
       addGoTopBtn();
       addScrollTop();
       addCheckAnchors();
+      addImgLazyLoad();
     </script>
   </body>
 </html>
