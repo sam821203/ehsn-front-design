@@ -2,124 +2,133 @@
 // 是價格的話請用price，會加上$符號，不是價格請用'text'，不會加上$符號
 // 區塊：送禮首選
 var dataTabSlider = [
-  [ // 送閨密
+  [
+    // 美體美膚
     {
-      productNumber: 2607936,
-      name: "【漢克嚴選】美國產日本和牛級_家庭號NG響食牛排_4包組(500g±10％/包)",
-      price: 911,
+      productNumber: 4091298,
+      name: "Elizabeth Arden 雅頓 21天霜 75ml*2入",
+      price: 1020,
     },
     {
-      productNumber: 3260458,
-      name: "【無老鍋】雙人套餐全台門市通用券POS-1(平假日適用)",
-      price: 1511,
+      productNumber: 3659705,
+      name: "Elizabeth Arden 雅頓 綠茶香水沐浴膠 500ml (公司貨超值三入組!)",
+      price: 999,
     },
     {
-      productNumber: 3412148,
-      name: "【EASY SHOP】珍奶-素無痕-大胸女孩全素面無鋼圈內衣-奶茶黃-",
-      price: 1111,
+      productNumber: 3099568,
+      name: "【SHILLS舒兒絲】 抗UV美白濾鏡小蒼蘭素顏霜+贈雙頭眉筆(小姐不熙娣/小明星大跟班推薦)-幣",
+      price: 699,
     },
     {
-      productNumber: 3326384,
-      name: "★快速出貨★超值優惠組【京美】能量健康按摩襪 寬口襪 5雙組",
-      price: 1111,
+      productNumber: 3795784,
+      name: "BIO UP 自然美日本黃金麴酒粕微脂面膜7盒(5片/盒)",
+      price: 1580,
     },
     {
-      productNumber: 3464709,
-      name: "PLAYBOY -  熱銷女包款 - 多款任選",
-      price: 1111,
+      productNumber: 4866394,
+      name: "simboo可拆卸帽防紫外線冰絲防曬外套",
+      price: 635,
     },
     {
-      productNumber: 3590270,
-      name: "【娘家】大紅麴三盒組(30粒/盒)",
-      price: 6811,
+      productNumber: 3091527,
+      name: "Style Recovery Pole 3D身形舒展棒-網",
+      price: 2980,
     },
   ],
-  [
+  [// 銀髮保健
+    {
+      productNumber: 4715932,
+      name: '家後 複方358紅麴磷蝦油(60顆/盒)x12盒 共720顆 超值組',
+      price: 25800,
+    },
+    {
+      productNumber: 4176720,
+      name: '白蘭氏深海魚油+蝦紅素(30錠*8盒+(送30顆/盒)，共270顆-網',
+      price: 2880,
+    },
+    {
+      productNumber: 4682346,
+      name: '【ivenor】十時塑燃脂茶10盒(廖家儀有效代言)',
+      price: 3313,
+    },
+    {
+      productNumber: 3326466,
+      name: '【添寧】PROskin 貼心敢動褲L-XL(14片x 4包/箱)',
+      price: 1140,
+    },
+    {
+      productNumber: 4746703,
+      name: 'MagSafe無線充電支架',
+      price: 681,
+    },
     {
       productNumber: 2348089,
       name: 'tokuyo 煥眼冷熱眼部按摩器 TS-183',
       price: 3411,
     },
+  ],
+  [// 生活居家
     {
-      productNumber: 3513994,
-      name: '奈森克林 酒精濕紙巾60抽x10包',
-      price: 611,
+      productNumber: 3513520,
+      name: '紐沛 竹炭豆腐砂 7Lx(6入組)',
+      price: 918,
     },
     {
-      productNumber: 3544768,
-      name: '【Glolux】北美品牌 掏耳神器 首創可伸縮式鏡頭 WiFi 二合一多功能可視掏耳棒 (時尚白) 通過NCC認證(獨家專屬底座收納)',
-      price: 1111,
+      productNumber: 3906167,
+      name: '【 戶外趣 】男薄款耐磨多口袋防潑水彈性防曬反折長褲 (HPM012 丈青/銷光灰)',
+      price: 1250,
     },
     {
-      productNumber: 3668119,
-      name: '【BonBon naturel】雪尼爾超柔浮雕沙發墊-1+2+3人(三件組)多款任選',
-      price: 1111,
+      productNumber: 4091687,
+      name: '生活良品 韓版大容量旅行袋飛機包 可摺疊衣物收納包 1入x1袋-網',
+      price: 222,
     },
     {
-      productNumber: 2348089,
-      name: 'tokuyo 煥眼冷熱眼部按摩器 TS-183',
-      price: 3411,
+      productNumber: 3462107,
+      name: 'Timberland 女款白色SUPAWAY織物休閒鞋|A2K7G143',
+      price: 1790,
     },
     {
-      productNumber: 3513994,
-      name: '奈森克林 酒精濕紙巾60抽x10包',
-      price: 611,
+      productNumber: 4678616,
+      name: '【好家房】日式負離子空氣清淨除濕兩用機-ARD02',
+      price: 1650,
+    },
+    {
+      productNumber: 3271682,
+      name: '奶茶/燕麥色TATUNG 大同 10人份多功能不鏽鋼電鍋TAC-10L-MCBI-庫',
+      price: 3080,
     },
   ],
-  [
+  [// 居家智慧
     {
-      productNumber: 3402924,
-      name: '憲哥推薦★JackyWuWU所不在藍牙喇叭(麥克風、喇叭雙入組)四色任選',
-      price: 6960,
+      productNumber: 4680060,
+      name: '50%回饋↘【日本SONGEN】松井除濕淨化雙效除濕機/清淨機 3公升大容量 (SG-S28KD)',
+      price: 2480,
     },
     {
-      productNumber: 2922737,
-      name: '【雙11促銷、送安裝】BenQ明基 50吋4KHDR護眼Android連網液晶顯示器(E50-720)-網',
-      price: 11111,
+      productNumber: 6412134,
+      name: '50%回饋↘NICONICO 360度陀螺循環立扇風扇NI-GS902',
+      price: 1780,
     },
     {
-      productNumber: 3188948,
-      name: '(原廠盒裝) ASUS 華碩 ZenBeam Latte L1 無線藍牙行動投影機',
-      price: 11111,
+      productNumber: 3454265,
+      name: '(官網登錄送電水壺)【Panasonic 國際牌】無線手持吸塵器(MC-SB85K-H)',
+      price: 15288,
     },
     {
-      productNumber: 3649458,
-      name: 'Apple MacBook Air 13吋 M2 8核心 CPU 與 8核心 GPU/8G/256G',
-      price: 34111,
+      productNumber: 4504070,
+      name: 'ROOMMI Babys Breath 空氣清淨機 適用空間約6坪',
+      price: 3680,
     },
     {
-      productNumber: 3402924,
-      name: '憲哥推薦★JackyWuWU所不在藍牙喇叭(麥克風、喇叭雙入組)四色任選',
-      price: 6960,
+      productNumber: 4677824,
+      name: '【FJ】強力清潔消毒高壓蒸氣清洗機CG8(清潔必備)',
+      price: 1480,
     },
     {
-      productNumber: 2922737,
-      name: '【雙11促銷、送安裝】BenQ明基 50吋4KHDR護眼Android連網液晶顯示器(E50-720)-網',
-      price: 11111,
-    },
-  ],
-  [ // $500以下
-    {
-      productNumber: 2810884,
-    },
-    {
-      productNumber: 2464809,
-    },
-    {
-      productNumber: 2779833,
-    },
-    {
-      productNumber: 2808250,
-    },
-    {
-      productNumber: 3036431,
-      name: '【常春樂活】攝守座軟膠囊(60粒/盒)x3盒',
-      price: 2911,
-    },
-    {
-      productNumber: 2900821,
-      name: '【DV 麗彤生醫】 醇耀妍NMN超能飲x6盒',
-      price: 2911,
+      productNumber: 4554604,
+      name: 'SAMSUNG Galaxy Watch5 44mm 藍牙版(R910) 智慧手錶 送好禮',
+      price: 7280,
     },
   ],
   [

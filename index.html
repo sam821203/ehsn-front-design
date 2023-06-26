@@ -242,11 +242,15 @@
 
       .sp-page__wrap video,
       .sp-page__wrap img {
-        filter: brightness(35%);
+        filter: brightness(30%);
       }
 
       .sp-page__wrap video:hover,
       .sp-page__wrap img:hover {
+        filter: brightness(100%);
+      }
+
+      .sp-page__wrap video.active {
         filter: brightness(100%);
       }
 
@@ -382,7 +386,6 @@
         <h2 id="spPage">SP page</h2>
         <div class="sp-page__wrap">
           <div class="item">
-            <!-- <div class="overlay"></div> -->
             <a href="./graduation/index.html">
               <video
                 id="graduation"
@@ -398,16 +401,6 @@
               </video>
             </a>
           </div>
-          <!-- <div class="item">
-          <a href="./celebrities/index.html">
-            <img src="./posters/poster-celebrities.jpg" alt="">
-          </a>
-        </div> -->
-          <!-- <div class="item">
-          <a href="./mother-1st/index.html">
-            <img src="./posters/poster-mother-1st.jpg" alt="">
-          </a>
-        </div> -->
           <div class="item">
             <a href="./mother-2nd/index.html">
               <video
@@ -419,7 +412,7 @@
                 poster="./posters/poster-mother-2nd.jpg"
               >
                 <source src="./videos/mother-2nd.mp4" type="video/mp4" />
-                <!-- <source src="./videos/mother-2nd.webm" type="video/ogg" /> -->
+                <source src="./videos/mother-2nd.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
             </a>
@@ -435,7 +428,7 @@
                 poster="./posters/poster-goddess-2nd.jpg"
               >
                 <source src="./videos/goddess-2nd.mp4" type="video/mp4" />
-                <!-- <source src="./videos/goddess-2nd.webm" type="video/ogg" /> -->
+                <source src="./videos/goddess-2nd.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
             </a>
@@ -451,7 +444,7 @@
                 poster="./posters/poster-new-year-2nd.jpg"
               >
                 <source src="./videos/new-year-2nd.mp4" type="video/mp4" />
-                <!-- <source src="./videos/new-year-2nd.webm" type="video/ogg" /> -->
+                <source src="./videos/new-year-2nd.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
             </a>
@@ -467,7 +460,7 @@
                 poster="./posters/poster-1212-1st.jpg"
               >
                 <source src="./videos/1212-1st.mp4" type="video/mp4" />
-                <!-- <source src="./videos/1212-1st.webm" type="video/ogg" /> -->
+                <source src="./videos/1212-1st.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
             </a>
@@ -483,7 +476,7 @@
                 poster="./posters/poster-1212-2nd.jpg"
               >
                 <source src="./videos/1212-2nd.mp4" type="video/mp4" />
-                <!-- <source src="./videos/1212-2nd.webm" type="video/ogg" /> -->
+                <source src="./videos/1212-2nd.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
             </a>
@@ -499,7 +492,7 @@
                 poster="./posters/poster-back-to-school.jpg"
               >
                 <source src="./videos/back-to-school.mp4" type="video/mp4" />
-                <!-- <source src="./videos/back-to-school.webm" type="video/ogg" /> -->
+                <source src="./videos/back-to-school.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
             </a>
@@ -515,7 +508,7 @@
                 poster="./posters/poster-father.jpg"
               >
                 <source src="./videos/father.mp4" type="video/mp4" />
-                <!-- <source src="./videos/father.webm" type="video/ogg" /> -->
+                <source src="./videos/father.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
             </a>
@@ -531,21 +524,11 @@
                 poster="./posters/poster-summer-1st.jpg"
               >
                 <source src="./videos/summer-1st.mp4" type="video/mp4" />
-                <!-- <source src="./videos/summer-1st.webm" type="video/ogg" /> -->
+                <source src="./videos/summer-1st.webm" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
             </a>
           </div>
-          <!-- <div class="item">
-            <a href="./618-lottery/index.html">
-              <img src="./posters/poster-618-lottery.jpg" alt="">
-            </a>
-          </div> -->
-          <!-- <div class="item">
-            <a href="./3c-thor/e/index.html">
-              <img src="./posters/poster-3c-thor.jpg" alt="">
-            </a>
-          </div> -->
         </div>
       </section>
       <section class="promo-page" id="promoPage">
@@ -562,10 +545,15 @@
             </a>
           </div>
           <div class="item">
+            <a href="./promo-page/3c-1111/index.html">
+              <img src="./posters/poster-3c-1111.jpg" alt="" />
+            </a>
+          </div>
+          <!-- <div class="item">
             <a href="./promo-page/3c-618/index.html">
               <img src="./posters/poster-3c-618.jpg" alt="" />
             </a>
-          </div>
+          </div> -->
         </div>
       </section>
       <section id="buildGrid" class="build-grid">
@@ -597,56 +585,49 @@
         <h2>Emarsys EDM</h2>
         <div class="emarsys-edm__wrap">
           <div class="item">
-            <a href="./promo-page/index.html">
-              <img src="./posters/poster-edm-1.jpg" alt="" />
-            </a>
+            <img src="./posters/poster-edm-1.jpg" alt="" />
           </div>
           <div class="item">
-            <a href="./promo-page/index.html">
-              <img src="./posters/poster-edm-2.jpg" alt="" />
-            </a>
+            <img src="./posters/poster-edm-2.jpg" alt="" />
           </div>
           <div class="item">
-            <a href="./promo-page/index.html">
-              <img src="./posters/poster-edm-3.jpg" alt="" />
-            </a>
+            <img src="./posters/poster-edm-3.jpg" alt="" />
           </div>
         </div>
       </section>
     </main>
     <script>
-      const addActiveVideo = () => {
-        const graduation = document.getElementById("graduation");
-        const mother2 = document.getElementById("mother2");
-        const goddess2 = document.getElementById("goddess2");
-        const newYear2 = document.getElementById("newYear2");
-        const double121st = document.getElementById("double121st");
-        const double122nd = document.getElementById("double122nd");
-        const backToSchool = document.getElementById("backToSchool");
-        const father = document.getElementById("father");
-        const summer1 = document.getElementById("summer1");
+      const addActivateVideo = () => {
+        const videoIds = [
+          "graduation",
+          "mother2",
+          "goddess2",
+          "newYear2",
+          "double121st",
+          "double122nd",
+          "backToSchool",
+          "father",
+          "summer1",
+        ];
 
-        const activeVideo = (el) => {
-          el.addEventListener("mouseover", function () {
-            el.play();
-            el.style.filter = "brightness(100%)";
+        const activateVideo = (videoElement) => {
+          videoElement.addEventListener("mouseover", () => {
+            videoElement.play();
+            videoElement.classList.add("active");
           });
 
-          el.addEventListener("mouseout", function () {
-            el.pause();
-            el.style.filter = "brightness(35%)";
+          videoElement.addEventListener("mouseout", () => {
+            videoElement.pause();
+            videoElement.classList.remove("active");
           });
         };
 
-        activeVideo(graduation);
-        activeVideo(mother2);
-        activeVideo(goddess2);
-        activeVideo(newYear2);
-        activeVideo(double121st);
-        activeVideo(double122nd);
-        activeVideo(backToSchool);
-        activeVideo(father);
-        activeVideo(summer1);
+        videoIds.forEach((id) => {
+          const videoElement = document.getElementById(id);
+          if (videoElement) {
+            activateVideo(videoElement);
+          }
+        });
       };
 
       const addGoTopBtn = () => {
@@ -734,7 +715,7 @@
         updateCheckAnchors();
       };
 
-      addActiveVideo();
+      addActivateVideo();
       addGoTopBtn();
       addScrollTop();
       addCheckAnchors();

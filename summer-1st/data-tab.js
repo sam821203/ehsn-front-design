@@ -1,81 +1,80 @@
 // 需要複製請連著"{},"整個區塊複製
 // 是價格的話請用'price'，會加上$符號，不是價格請用'text'，不會加上$符號
 // 區塊：頁籤 大牌鉅獻
-var dataTab1 = [ 
+var dataTab1 = [
   {
-    'productNumber': 2779833,
-    'name': '任-【DECOBA】日系針織彈力牛仔褲(單件)',
-    'price': 11,
+    productNumber: 4091298,
+    name: "Elizabeth Arden 雅頓 21天霜 75ml*2入",
+    price: 1020,
   },
   {
-    'productNumber': 2808250,
-    'name': '韓國2080 防蛀護齦牙膏6g',
-    'price': 11,
-  },
-];
-
-var dataTab2 = [ 
-  {
-    'productNumber': 2464809,
-    'name': '【半島良品】多款選項 吸水貼 地墊 木紋貼 樓梯墊 坐墊-網',
-    'price': 111,
-  },
-  {
-    'productNumber': 2808151,
-    'name': '【Jie Fen潔芬】噴霧式乾洗手劑-120ml噴瓶-網',
-    'price': 111,
-  },
-  
-];
-
-var dataTab3 = [ 
-  {
-    'productNumber': 2190547,
-    'name': 'SILWA 西華304不鏽鋼節能免火再煮鍋-7L（曾國城熱情推薦) ★好禮三選一',
-    'price': 1111,
-  },
-  {
-    'productNumber': 2786321,
-    'name': '【買1送1】海鮮王 極品巴西大龍蝦 1隻組(450g±10%/隻)_送波士頓龍蝦1隻組(350g±10%/隻)(共2隻)',
-    'price': 1111,
+    productNumber: 3659705,
+    name: "Elizabeth Arden 雅頓 綠茶香水沐浴膠 500ml (公司貨超值三入組!)",
+    price: 999,
   },
 ];
 
-var dataTab4 = [ 
+var dataTab2 = [
   {
-    'productNumber': 2809797,
-    'name': 'NRK 牛爾 超效胜肽迴齡抗皺面膜1入',
-    'price': 11,
+    productNumber: 3099568,
+    name: "【SHILLS舒兒絲】 抗UV美白濾鏡小蒼蘭素顏霜+贈雙頭眉筆(小姐不熙娣/小明星大跟班推薦)-幣",
+    price: 699,
   },
   {
-    'productNumber': 2803070,
-    'name': '★11元搶購★FORTE台塑生醫美纖萃晶凍隨身包(2包/盒)',
-    'price': 11,
-  },
-];
-
-var dataTab5 = [ 
-  {
-    'productNumber': 2811600,
-    'name': 'MONS 頂級奢華質感整貂外套',
-    'price': 11111,
-  },
-  {
-    'productNumber': 2160351,
-    'name': 'Jcode真愛密碼 相愛黃金/水晶手鍊',
-    'price': 11111,
+    productNumber: 3795784,
+    name: "BIO UP 自然美日本黃金麴酒粕微脂面膜7盒(5片/盒)",
+    price: 1580,
   },
 ];
 
-var dataTab6 = [ 
+var dataTab3 = [
   {
-    'productNumber': 2811600,
-    'name': 'MONS 頂級奢華質感整貂外套',
-    'price': 11111,
+    productNumber: 4866394,
+    name: "simboo可拆卸帽防紫外線冰絲防曬外套",
+    price: 635,
   },
   {
-    'productNumber': 2160351,
-    'name': 'Jcode真愛密碼 相愛黃金/水晶手鍊',
-    'price': 11111,
+    productNumber: 3091527,
+    name: "Style Recovery Pole 3D身形舒展棒-網",
+    price: 2980,
+  },
+];
+
+var dataTab4 = [
+  {
+    productNumber: 3513520,
+    name: '紐沛 竹炭豆腐砂 7Lx(6入組)',
+    price: 918,
+  },
+  {
+    productNumber: 3906167,
+    name: '【 戶外趣 】男薄款耐磨多口袋防潑水彈性防曬反折長褲 (HPM012 丈青/銷光灰)',
+    price: 1250,
+  },
+];
+
+var dataTab5 = [
+  {
+    productNumber: 4091687,
+    name: '生活良品 韓版大容量旅行袋飛機包 可摺疊衣物收納包 1入x1袋-網',
+    price: 222,
+  },
+  {
+    productNumber: 3462107,
+    name: 'Timberland 女款白色SUPAWAY織物休閒鞋|A2K7G143',
+    price: 1790,
+  },
+];
+
+var dataTab6 = [
+  {
+    productNumber: 4678616,
+    name: '【好家房】日式負離子空氣清淨除濕兩用機-ARD02',
+    price: 1650,
+  },
+  {
+    productNumber: 3271682,
+    name: '奶茶/燕麥色TATUNG 大同 10人份多功能不鏽鋼電鍋TAC-10L-MCBI-庫',
+    price: 3080,
   },
 ];

@@ -1,80 +1,80 @@
 // 需要複製請連著"{},"整個區塊複製
 // 是價格的話請用'price'，會加上$符號，不是價格請用'text'，不會加上$符號
 // 區塊：頁籤 品牌大賞
-var dataTab1 = [ 
+var dataTab1 = [
   {
-    'productNumber': 2779833,
-    'name': '任-【DECOBA】日系針織彈力牛仔褲(單件)',
-    'price': 11,
+    productNumber: 4680060,
+    name: '50%回饋↘【日本SONGEN】松井除濕淨化雙效除濕機/清淨機 3公升大容量 (SG-S28KD)',
+    price: 2480,
   },
   {
-    'productNumber': 2808250,
-    'name': '韓國2080 防蛀護齦牙膏6g',
-    'price': 11,
-  },
-];
-
-var dataTab2 = [ 
-  {
-    'productNumber': 2464809,
-    'name': '【半島良品】多款選項 吸水貼 地墊 木紋貼 樓梯墊 坐墊-網',
-    'price': 111,
-  },
-  {
-    'productNumber': 2808151,
-    'name': '【Jie Fen潔芬】噴霧式乾洗手劑-120ml噴瓶-網',
-    'price': 111,
+    productNumber: 6412134,
+    name: '50%回饋↘NICONICO 360度陀螺循環立扇風扇NI-GS902',
+    price: 1780,
   },
 ];
 
-var dataTab3 = [ 
+var dataTab2 = [
   {
-    'productNumber': 2190547,
-    'name': 'SILWA 西華304不鏽鋼節能免火再煮鍋-7L（曾國城熱情推薦) ★好禮三選一',
-    'price': 1111,
+    productNumber: 3454265,
+    name: '(官網登錄送電水壺)【Panasonic 國際牌】無線手持吸塵器(MC-SB85K-H)',
+    price: 15288,
   },
   {
-    'productNumber': 2786321,
-    'name': '【買1送1】海鮮王 極品巴西大龍蝦 1隻組(450g±10%/隻)_送波士頓龍蝦1隻組(350g±10%/隻)(共2隻)',
-    'price': 1111,
-  },
-];
-
-var dataTab4 = [ 
-  {
-    'productNumber': 2809797,
-    'name': 'NRK 牛爾 超效胜肽迴齡抗皺面膜1入',
-    'price': 11,
-  },
-  {
-    'productNumber': 2803070,
-    'name': '★11元搶購★FORTE台塑生醫美纖萃晶凍隨身包(2包/盒)',
-    'price': 11,
+    productNumber: 4504070,
+    name: 'ROOMMI Babys Breath 空氣清淨機 適用空間約6坪',
+    price: 3680,
   },
 ];
 
-var dataTab5 = [ 
+var dataTab3 = [
   {
-    'productNumber': 2811600,
-    'name': 'MONS 頂級奢華質感整貂外套',
-    'price': 11111,
+    productNumber: 4677824,
+    name: '【FJ】強力清潔消毒高壓蒸氣清洗機CG8(清潔必備)',
+    price: 1480,
   },
   {
-    'productNumber': 2160351,
-    'name': 'Jcode真愛密碼 相愛黃金/水晶手鍊',
-    'price': 11111,
+    productNumber: 4554604,
+    name: 'SAMSUNG Galaxy Watch5 44mm 藍牙版(R910) 智慧手錶 送好禮',
+    price: 7280,
   },
 ];
 
-var dataTab6 = [ 
+var dataTab4 = [
   {
-    'productNumber': 2811600,
-    'name': 'MONS 頂級奢華質感整貂外套',
-    'price': 11111,
+    productNumber: 4091298,
+    name: "Elizabeth Arden 雅頓 21天霜 75ml*2入",
+    price: 1020,
   },
   {
-    'productNumber': 2160351,
-    'name': 'Jcode真愛密碼 相愛黃金/水晶手鍊',
-    'price': 11111,
+    productNumber: 3659705,
+    name: "Elizabeth Arden 雅頓 綠茶香水沐浴膠 500ml (公司貨超值三入組!)",
+    price: 999,
+  },
+];
+
+var dataTab5 = [
+  {
+    productNumber: 3099568,
+    name: "【SHILLS舒兒絲】 抗UV美白濾鏡小蒼蘭素顏霜+贈雙頭眉筆(小姐不熙娣/小明星大跟班推薦)-幣",
+    price: 699,
+  },
+  {
+    productNumber: 3795784,
+    name: "BIO UP 自然美日本黃金麴酒粕微脂面膜7盒(5片/盒)",
+    price: 1580,
+  },
+];
+
+var dataTab6 = [
+  {
+    productNumber: 4866394,
+    name: "simboo可拆卸帽防紫外線冰絲防曬外套",
+    price: 635,
+  },
+  {
+    productNumber: 3091527,
+    name: "Style Recovery Pole 3D身形舒展棒-網",
+    price: 2980,
   },
 ];

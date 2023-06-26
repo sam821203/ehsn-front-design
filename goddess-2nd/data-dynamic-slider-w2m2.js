@@ -3,26 +3,33 @@
 // 區塊： 霹靂Q俠
 var dataDynamicSliderW2M2 = [
   {
-    name: '搶購中搶購中搶購中搶購中搶購中搶購中搶購中',
-    productNumber: 2808250, 
-    price: 9999,
+    name: 'LA ROCHE-POSAY理膚寶水 抗痘煥膚組',
+    productNumber: 3570364,
+    price: 2280,
   },
   {
-    productNumber: 2809797,
+    name: '【iVENOR】噴噴魔滴小綠瓶_5瓶',
+    productNumber: 3565909,
+    price: 2980,
   },
   {
-    name: '搶購中搶購中搶購中搶購中搶購中搶購中搶購中',
-    productNumber: 2809797,
-  },
-
-  {
-    productNumber: 2810884,
+    name: '【送負離子吹風機】DANBY丹比微電腦4人份多功能電子鍋DB-703RC',
+    productNumber: 3676834,
+    price: 1957,
   },
   {
-    productNumber: 2809797,
+    name: 'irocks 無線機械式鍵盤 K71R RGB背光 Gateron軸',
+    productNumber: 3138055,
+    price: 2890,
   },
   {
-    productNumber: 2464809,
+    name: '【泰山】Cheers mini氣泡水300ml(48入/2箱)',
+    productNumber: 3486959,
+    price: 598,
   },
-
+  {
+    name: '7件組【靜思書軒】 2022歲末感恩本草15ml濃縮液6盒+贈1盒濃縮液組',
+    productNumber: 3696872,
+    price: 4590,
+  },
 ];

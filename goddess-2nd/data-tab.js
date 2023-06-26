@@ -1,36 +1,36 @@
 // 需要複製請連著"{},"整個區塊複製
 // 是價格的話請用'price'，會加上$符號，不是價格請用'text'，不會加上$符號
 // 區塊：妳是哪一派?
-var dataTab1 = [ 
+var dataTab1 = [
   {
-    'productNumber': 2779833,
-    'name': '任-【DECOBA】日系針織彈力牛仔褲(單件)',
-    'price': 11,
+    productNumber: 4680060,
+    name: '50%回饋↘【日本SONGEN】松井除濕淨化雙效除濕機/清淨機 3公升大容量 (SG-S28KD)',
+    price: 2480,
   },
   {
-    'productNumber': 2808250,
-    'name': '韓國2080 防蛀護齦牙膏6g',
-    'price': 11,
+    productNumber: 6412134,
+    name: '50%回饋↘NICONICO 360度陀螺循環立扇風扇NI-GS902',
+    price: 1780,
   },
   {
-    'productNumber': 2809797,
-    'name': 'NRK 牛爾 超效胜肽迴齡抗皺面膜1入',
-    'price': 11,
+    productNumber: 3454265,
+    name: '(官網登錄送電水壺)【Panasonic 國際牌】無線手持吸塵器(MC-SB85K-H)',
+    price: 15288,
   },
   {
-    'productNumber': 2809797,
-    'name': 'NRK 牛爾 超效胜肽迴齡抗皺面膜1入',
-    'price': 11,
+    productNumber: 4504070,
+    name: 'ROOMMI Babys Breath 空氣清淨機 適用空間約6坪',
+    price: 3680,
   },
   {
-    'productNumber': 2803070,
-    'name': '★11元搶購★FORTE台塑生醫美纖萃晶凍隨身包(2包/盒)',
-    'price': 11,
+    productNumber: 4677824,
+    name: '【FJ】強力清潔消毒高壓蒸氣清洗機CG8(清潔必備)',
+    price: 1480,
   },
   {
-    'productNumber': 2810884,
-    'name': 'MyCard 30點 點數卡',
-    'price': 11,
+    productNumber: 4554604,
+    name: 'SAMSUNG Galaxy Watch5 44mm 藍牙版(R910) 智慧手錶 送好禮',
+    price: 7280,
   },
   {
     'productNumber': 2810884,
@@ -44,36 +44,36 @@ var dataTab1 = [
   },
 ];
 
-var dataTab2 = [ 
+var dataTab2 = [
   {
-    'productNumber': 2464809,
-    'name': '【半島良品】多款選項 吸水貼 地墊 木紋貼 樓梯墊 坐墊-網',
-    'price': 111,
+    productNumber: 4091298,
+    name: "Elizabeth Arden 雅頓 21天霜 75ml*2入",
+    price: 1020,
   },
   {
-    'productNumber': 2808151,
-    'name': '【Jie Fen潔芬】噴霧式乾洗手劑-120ml噴瓶-網',
-    'price': 111,
+    productNumber: 3659705,
+    name: "Elizabeth Arden 雅頓 綠茶香水沐浴膠 500ml (公司貨超值三入組!)",
+    price: 999,
   },
   {
-    'productNumber': 2793601,
-    'name': '雙11瘋殺 LV藍帶無穀濃縮 老犬-減重犬 狗飼料 450g*2包 (海陸+膠原蔬果)-網',
-    'price': 111,
+    productNumber: 3099568,
+    name: "【SHILLS舒兒絲】 抗UV美白濾鏡小蒼蘭素顏霜+贈雙頭眉筆(小姐不熙娣/小明星大跟班推薦)-幣",
+    price: 699,
   },
   {
-    'productNumber': 2703302,
-    'name': 'A+維髮健高植粹香氛洗髮精500ml',
-    'price': 111,
+    productNumber: 3795784,
+    name: "BIO UP 自然美日本黃金麴酒粕微脂面膜7盒(5片/盒)",
+    price: 1580,
   },
   {
-    'productNumber': 2798723,
-    'name': 'BIOCROWN百匡 經典橄欖卸妝油100ml-網',
-    'price': 111,
+    productNumber: 4866394,
+    name: "simboo可拆卸帽防紫外線冰絲防曬外套",
+    price: 635,
   },
   {
-    'productNumber': 2797404,
-    'name': 'DR.Selection 賽萊斯 海泥分子酊保濕化妝水1% 旅行組(30mlx2入)',
-    'price': 111,
+    productNumber: 3091527,
+    name: "Style Recovery Pole 3D身形舒展棒-網",
+    price: 2980,
   },
   {
     'productNumber': 2575857,
@@ -87,36 +87,36 @@ var dataTab2 = [
   },
 ];
 
-var dataTab3 = [ 
+var dataTab3 = [
   {
-    'productNumber': 2190547,
-    'name': 'SILWA 西華304不鏽鋼節能免火再煮鍋-7L（曾國城熱情推薦) ★好禮三選一',
-    'price': 1111,
+    productNumber: 4715932,
+    name: '家後 複方358紅麴磷蝦油(60顆/盒)x12盒 共720顆 超值組',
+    price: 25800,
   },
   {
-    'productNumber': 2786321,
-    'name': '【買1送1】海鮮王 極品巴西大龍蝦 1隻組(450g±10%/隻)_送波士頓龍蝦1隻組(350g±10%/隻)(共2隻)',
-    'price': 1111,
+    productNumber: 4176720,
+    name: '白蘭氏深海魚油+蝦紅素(30錠*8盒+(送30顆/盒)，共270顆-網',
+    price: 2880,
   },
   {
-    'productNumber': 1963024,
-    'name': '領先者 ES-24測速提醒 防眩雙鏡 後視鏡型行車記錄器  促銷1111+送32G 成本2%',
-    'price': 1111,
+    productNumber: 4682346,
+    name: '【ivenor】十時塑燃脂茶10盒(廖家儀有效代言)',
+    price: 3313,
   },
   {
-    'productNumber': 2817139,
-    'name': '【HADA NATURE 肌純】Q透潤澤碳酸泡泡精華液2入組(85g x 2)',
-    'price': 1111,
+    productNumber: 3326466,
+    name: '【添寧】PROskin 貼心敢動褲L-XL(14片x 4包/箱)',
+    price: 1140,
   },
   {
-    'productNumber': 2800897,
-    'name': '【雙11限定】船井 全效膠原蛋白光彩賦活組-網',
-    'price': 1111,
+    productNumber: 4746703,
+    name: 'MagSafe無線充電支架',
+    price: 681,
   },
   {
-    'productNumber': 2494082,
-    'name': '[Jamieson健美生] 大包裝 鈣+D3 100顆(加拿大原裝進口)3入組(健美生Jamieson)',
-    'price': 1111,
+    productNumber: 2348089,
+    name: 'tokuyo 煥眼冷熱眼部按摩器 TS-183',
+    price: 3411,
   },
   {
     'productNumber': 2367439,
@@ -130,36 +130,36 @@ var dataTab3 = [
   },
 ];
 
-var dataTab4 = [ 
+var dataTab4 = [
   {
-    'productNumber': 2809797,
-    'name': 'NRK 牛爾 超效胜肽迴齡抗皺面膜1入',
-    'price': 11,
+    productNumber: 3513520,
+    name: '紐沛 竹炭豆腐砂 7Lx(6入組)',
+    price: 918,
   },
   {
-    'productNumber': 2803070,
-    'name': '★11元搶購★FORTE台塑生醫美纖萃晶凍隨身包(2包/盒)',
-    'price': 11,
+    productNumber: 3906167,
+    name: '【 戶外趣 】男薄款耐磨多口袋防潑水彈性防曬反折長褲 (HPM012 丈青/銷光灰)',
+    price: 1250,
   },
   {
-    'productNumber': 2800879,
-    'name': '雅詩蘭黛 特潤超導修護露50mlx2+年輕肌密無敵霜75mlx2+微分子肌底原生露(櫻花輕盈版)150mlx1',
-    'price': 11111,
+    productNumber: 4091687,
+    name: '生活良品 韓版大容量旅行袋飛機包 可摺疊衣物收納包 1入x1袋-網',
+    price: 222,
   },
   {
-    'productNumber': 2808494,
-    'name': '華陀龜鹿專家年度回饋組(鱘龍甲魚龜鹿膠元6盒(6瓶/盒)+神鴕膠原錠6盒(30錠/盒)+高麗紅蔘精2盒(10入/盒))-網',
-    'price': 11111,
+    productNumber: 3462107,
+    name: 'Timberland 女款白色SUPAWAY織物休閒鞋|A2K7G143',
+    price: 1790,
   },
   {
-    'productNumber': 2150162,
-    'name': 'Panasonic LUMIX DC-GF10K / GF10 12-32mm (公司貨)',
-    'price': 11111,
+    productNumber: 4678616,
+    name: '【好家房】日式負離子空氣清淨除濕兩用機-ARD02',
+    price: 1650,
   },
   {
-    'productNumber': 2515781,
-    'name': '大疆 DJI MAVIC MINI 空拍機 單機版 輕玩家配件套組 史上最輕 無人機 公司貨',
-    'price': 11111,
+    productNumber: 3271682,
+    name: '奶茶/燕麥色TATUNG 大同 10人份多功能不鏽鋼電鍋TAC-10L-MCBI-庫',
+    price: 3080,
   },
   {
     'productNumber': 2216509,

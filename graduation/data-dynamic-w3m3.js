@@ -3,22 +3,33 @@
 // 區塊： 學長買給你
 var dataDynamicSliderW3M3 = [
   {
-    productNumber: 2808250, 
+    name: 'CS22 倍思T2迷你定位智能藍芽防丟器  錢包防丟 兒童定位',
+    productNumber: 2897733,
+    price: 399,
   },
   {
-    productNumber: 2809797,
+    name: '(買一送一) aibo NMV65KS 塗鴉美學 12000 Plus 行動電源',
+    productNumber: 3114919,
+    price: 699,
   },
   {
-    productNumber: 2809797,
+    name: '贈集塵袋【Karcher德國凱馳】乾濕兩用吸塵器 WD3300',
+    productNumber: 2245726,
+    price: 4800,
   },
   {
-    productNumber: 3106577,
+    name: '【Philips飛利浦】熱穿透氣旋智能旗艦氣炸鍋4.5L HD9742/62',
+    productNumber: 3681890,
+    price: 8990,
   },
   {
-    productNumber: 1950578,
+    name: '【SK-II】肌活能量活膚霜 100g*2入',
+    productNumber: 3595914,
+    price: 6950,
   },
   {
-    productNumber: 2602783,
+    name: '日本味王 30:6金盞花葉黃素膠囊(30粒/盒)X6-網',
+    productNumber: 2423251,
+    price: 2395,
   },
-
 ];
